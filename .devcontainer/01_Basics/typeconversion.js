@@ -34,6 +34,27 @@ let valueInBoolean = Boolean(isLoggedIn)
 //let numberToString = null
 let numberToString = undefined
 let valueInString = String(numberToString)
-console.log(valueInString);//33,33,33abc,,null,undefined
-console.log(typeof valueInString);//string,string,string,string,string,string
+//console.log(valueInString);//33,33,33abc,,null,undefined
+//console.log(typeof valueInString);//string,string,string,string,string,string
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+let x = 3;
+const y = x++;
+//console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+let a = 3;
+const b = ++a;
+
+//console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
+
+let x1 = 3;
+const y1 = x1++;
+// x1 is 4; y1 is 3
+console.log(`y1 : ${y1}, x1 : ${x1}`)
+
+let x2 = 3n;
+const y2 = x2++;
+// x2 is 4n; y2 is 3n
+console.log(`y2 : ${y2}, x2 : ${x2}`)
